@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Main Content Area */
+        .main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Columns */
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .column {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flexbox Layout</h1>
+    </header>
+
+    <div class="main">
+        <div class="column">Left Column</div>
+        <div class="column">Center Column</div>
+        <div class="column">Right Column</div>
+    </div>
+
+    <footer>
+        <p>© 2025 My Website</p>
+    </footer>
+
+</body>
+</html>

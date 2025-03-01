@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Hover Effects</title>
+    <style>
+        /* Basic styling for the button */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Initial green color */
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for color and size */
+        }
+
+        /* Hover effect */
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: scale(1.1); /* Increase size on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button -->
+    <button class="button">Hover Me</button>
+
+</body>
+</html>

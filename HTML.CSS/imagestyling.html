@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Styling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        img {
+            width: 300px; /* Adjust the image size */
+            height: auto; /* Keep the aspect ratio */
+            border: 5px solid #4CAF50; /* Green border */
+            border-radius: 15px; /* Round corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Slightly enlarge the image when hovered */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger box shadow on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <!-- Embed your image using the <img> tag -->
+        <img src="https://via.placeholder.com/300" alt="Sample Image">
+    </div>
+
+</body>
+</html>
